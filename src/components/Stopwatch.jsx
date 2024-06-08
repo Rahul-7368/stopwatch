@@ -35,9 +35,10 @@ const Stopwatch = () => {
     const minutes = Math.floor(time / 60);
     const seconds = time % 60;
 
-    const formattedMinutes = minutes < 10 ? `0${minutes}` : `${minutes}`;
-    const formattedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
-    return `${formattedMinutes}:${formattedSeconds}`;
+    // const formattedMinutes = minutes < 10 ? `0${minutes}` : `${minutes}`;
+    // const formattedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
+    // return `${formattedMinutes}:${formattedSeconds}`;
+    return `${minutes.toString().padStart(1, '0')}:${seconds.toString().padStart(2, '0')}`; 
   };
 
   return (
