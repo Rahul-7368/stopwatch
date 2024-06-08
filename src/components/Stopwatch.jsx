@@ -50,7 +50,7 @@ const Stopwatch = () => {
         ) : (
           <button onClick={stopStopwatch}>Stop</button>
         )}
-        <button onClick={resetStopwatch} disabled={running}>Reset</button>
+        <button onClick={resetStopwatch} >Reset</button>
       </div>
     </div>
   );
